@@ -27,7 +27,7 @@ A responsive web application that allows users to view and analyze different opt
 
 ```
 Interactive-UI/
-├── nerve_index.html
+├── index.html
 ├── nerve_style.css
 ├── Js
 |    └── nerve_js.js
