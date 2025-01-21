@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive UI</title>
+    <link rel="stylesheet" href="nerve_style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.ico">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="view-toggle">
+            <button class="active">Bullish</button>
+            <button>Bearish</button>
+            <button>Rangebound</button>
+            <button>Volatile</button>
+        </div>
+
+        <div class="date-selector">
+            <button class="date-dropdown">
+                Select Date
+                <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="date-options"></div>
+        </div>
+
+        <div class="strategy-cards"></div>
+    </div>
+
+    <script src="Js/nerve_data.js"></script>
+    <script src="Js/nerve_js.js"></script>
+</body>
+</html>
