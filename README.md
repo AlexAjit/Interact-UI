@@ -20,7 +20,7 @@ A responsive web application that allows users to view and analyze different opt
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 - No external libraries or frameworks
 
 ## Project Structure
