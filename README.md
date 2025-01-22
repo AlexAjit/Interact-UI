@@ -20,14 +20,14 @@ A responsive web application that allows users to view and analyze different opt
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 - No external libraries or frameworks
 
 ## Project Structure
 
 ```
 Interactive-UI/
-├── nerve_index.html
+├── index.html
 ├── nerve_style.css
 ├── Js
 |    └── nerve_js.js
@@ -46,7 +46,7 @@ git clone https://github.com/AlexAjit/Interact-UI.git
 
 2. Navigate to the project directory:
 ```bash
-cd Interactive-UI
+cd Interact-UI
 ```
 
 3. Open `index.html` in your web browser to view the application
