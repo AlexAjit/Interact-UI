@@ -117,3 +117,83 @@ body {
 .date-dropdown.open .dropdown-arrow {
     transform: rotate(180deg);
 }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.wave-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, rgba(135, 206, 235, 0.05));
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.wave-1 {
+    animation: wave1 8s linear infinite, fade 2s infinite;
+    animation-delay: 0s, 0s;
+}
+
+.wave-2 {
+    animation: wave2 10s linear infinite, fade 2s infinite;
+    animation-delay: -3s, -0.5s;
+}
+
+.wave-3 {
+    animation: wave3 12s linear infinite, fade 2s infinite;
+    animation-delay: -6s, -1s;
+}
+
+.wave-4 {
+    animation: wave2 14s linear infinite, fade 2s infinite;
+    animation-delay: -9s, -1.5s;
+}
+
+@keyframes wave1 {
+    0% { transform: translateX(0) scaleY(1); }
+    50% { transform: translateX(-25%) scaleY(0.95); }
+    100% { transform: translateX(-50%) scaleY(1); }
+}
+
+@keyframes wave2 {
+    0% { transform: translateX(0) scaleY(0.95); }
+    50% { transform: translateX(-25%) scaleY(1); }
+    100% { transform: translateX(-50%) scaleY(0.95); }
+}
+
+@keyframes wave3 {
+    0% { transform: translateX(0) scaleY(0.9); }
+    50% { transform: translateX(-25%) scaleY(1.05); }
+    100% { transform: translateX(-50%) scaleY(0.9); }
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+}
+
+.wave path {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { stroke-dashoffset: 1500; }
+    100% { stroke-dashoffset: -1500; }
+}
