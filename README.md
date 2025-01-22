@@ -46,7 +46,7 @@ git clone https://github.com/AlexAjit/Interact-UI.git
 
 2. Navigate to the project directory:
 ```bash
-cd Interactive-UI
+cd Interact-UI
 ```
 
 3. Open `index.html` in your web browser to view the application
